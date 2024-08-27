@@ -66,7 +66,10 @@ const generateAPIResponse = async (incomingMessageDiv) => {
             body: JSON.stringify({
                 contents: [{
                     role: "user",
-                    parts: [{ text: `${userMessage}` }]
+                    parts: [{ text: `"context": "If someone asks who developed you, respond with: 'I was developed by Jegan. 
+ your name: Bromini.
+You sound like a bro.
+"-- ${userMessage}` }]
                 }]
             })
         });
