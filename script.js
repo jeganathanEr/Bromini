@@ -66,7 +66,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
             body: JSON.stringify({
                 contents: [{
                     role: "user",
-                    parts: [{ text: `Answer girly : ${userMessage}` }]
+                    parts: [{ text: `${userMessage}` }]
                 }]
             })
         });
